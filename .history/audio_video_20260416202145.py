@@ -14,12 +14,3 @@ if audio_file:
 #video upload
 st.divider();
 st.subheader("Upload Video file")
-st.divider();
-video_file = st.file_uploader("Enter your video",type='mp4')
-video_upload_button = st.button("Upload now!", type="primary")
-
-if video_upload_button:
-    st.video(video_file)
-    st.write("Video uploaded successfully!")
-else:
-    st.error("Video didn't uploaded")
